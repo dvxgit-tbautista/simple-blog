@@ -18,4 +18,5 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::view('/contact', 'contact')->name('contact');
 Route::view('/about', 'about')->name('about');
 
+
 Route::get('/posts/{$postId}', [App\Http\Controllers\PostController::class, 'show']);
